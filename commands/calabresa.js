@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'calabresa',
+  name: 'newnick',
   execute(mushroom, message, args){
     args = args.join(' ').split('<');
     const config = require(__dirname + '/../config.json')
@@ -10,7 +10,7 @@ module.exports = {
       if (!role) return message.reply('Faltou mencionar um cargo.');
       try{
         role.setName(args[0]).then(r => {
-        message.channel.send('Sim');
+        message.channel.send('nome alterado');
         });
       }
       catch(e){
