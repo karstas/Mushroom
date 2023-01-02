@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'newnick',
+  name: 'newrolnename',
   execute(mushroom, message, args){
     args = args.join(' ').split('<');
     const config = require(__dirname + '/../config.json')
